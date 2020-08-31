@@ -2,10 +2,11 @@
 def get_num_stickers(inp):
   strin = "facebok"
   c = 0
-  cnew = 1
+  cnew = inp.count(strin[0])
   for i in range(len(strin)):
-    if inp.count(strin[i]) > 0 and cnew > c:
+    if (cnew > c):
       cnew = inp.count(strin[i])
+      print(cnew)
   return cnew
 
 if __name__ == '__main__':
