@@ -1,9 +1,6 @@
 
 import re
 
-s = input()
-k = input()
-
 def test():
     for i in range(len(s)):
         s = s[i, i + int(len(k))]
@@ -22,3 +19,9 @@ def working():
     if temp == 0:
         print("(-1, -1)")
 
+
+s = input()
+k = input()
+
+test()
+working()
