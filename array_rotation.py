@@ -24,3 +24,21 @@ if __name__ == '__main__':
     fptr.write('\n')
 
     fptr.close()
+
+###############################################################
+    
+def rotate(arr, z):
+    newarr = []
+    for i in range(z, len(arr)):
+        newarr.append(arr[i])
+
+    for j in range(z):
+        newarr.append(arr[j])
+        
+    return newarr
+
+
+arr = [10, 20, 30, 40, 50]
+z=3
+
+print(rotate(arr,z))
