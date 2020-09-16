@@ -14,18 +14,13 @@
 # any non-'facebook' letters, and the only potential non-letter characters
 # in the string are spaces.
 
-
-def get_num_stickers(inp):
-  strin = "facebok"
-  c = 0
-  cnew = inp.count(strin[0])
-  for i in range(len(strin)):
-    if (cnew > c):
-      cnew = inp.count(strin[i])
-      print(cnew)
-  return cnew
-
-if __name__ == '__main__':
-    inp = input("Please input the string: ")
-    stickers = get_num_stickers(inp)
-    print(stickers)
+def get_num_stickers(string):
+    count = 0
+    for i in range(len(string)):
+        if string.count(string[i]) > count:
+            count = string.count(string[i])
+    print(count)
+    
+    
+string = "facebok"
+get_num_stickers(string)
