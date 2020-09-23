@@ -10,7 +10,3 @@ for l in lines:
     #ip.append(l.search(pattern))
     final = re.findall(pattern, l)
     print(final)
-    #ip.append(final)
-    if final in ip:
-        
-print(ip)
