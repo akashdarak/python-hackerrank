@@ -5,8 +5,17 @@ with open("log.txt") as file:
     
 pattern = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 ip = []
+d ={}
 
 for l in lines:
-    #ip.append(l.search(pattern))
     final = re.findall(pattern, l)
-    print(final)
+    final = (','.join(final))
+    #print(final)
+    ip.append(final)
+    if final in d:
+        d[final] += 1 
+    else:
+        d[final] = 1
+        
+print(ip)
+print(d)   
