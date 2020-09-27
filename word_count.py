@@ -23,7 +23,7 @@ with open("log.txt") as f:
     d = {}
     
     for l in lines:
-        print(l)
+        #print(l)
         s = l.split(" ")
         #print(s)
         for i in s:
