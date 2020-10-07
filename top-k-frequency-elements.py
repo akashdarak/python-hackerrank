@@ -12,19 +12,20 @@ Output: [1,2]
 ######################
 
 
-num = [1,2,2,3,3,3,3,4] 
+num =  [4, 4, 4, 2, 2, 5]
 z = 2
 di = {}
-
+li = [ ]
 for x in num:
-    k = x
     v = num.count(x)
-    di[k] = v
+    di[x] = v
 
 print(di.items())
 
 for a in sorted(di, key=di.get, reverse=True):
-    print(a, di[a])
+    print(a)
+    if a == z:
+        break
     
 
     
