@@ -18,3 +18,17 @@ for i in expression:
 
 if len(stack) == 0:
     print("Balanced")
+
+#######################################################
+
+brackets = ['()', '{}', '[]']
+expression = "()[{}]"
+
+while any(x in expression for x in brackets):
+    for b in brackets:
+        expression = expression.replace(b, '')
+
+if (expression == ""):
+    print("Balanced")
+else:
+    print("Unbalanced")
